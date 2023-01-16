@@ -21,3 +21,21 @@ variable "instance_keypair" {
     default = "london-tf"
 
 }
+
+#aws EC2 instance type - list 
+variable "instance_type_list"{
+    description = "The EC2 instance type"
+    type = list
+    default = ["t3.micro", "t2.micro", "t3.small"]
+}
+
+#aws EC2 instance type map
+variable "instance_type_map"{
+    description = "The EC2 instance type"
+    type = map
+    default = {
+        "dev" = "t2.micro"
+        "test" = "t3.micro"
+        "prod" = "t3.large"
+    }
+}
