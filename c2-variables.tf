@@ -18,7 +18,7 @@ variable "instance_type" {
 variable "instance_keypair" {
     description = "keypair that needs to be associated with the EC2 instance"
     type = string
-    default = "london-tf"
+    default = "london.tf"
 
 }
 
