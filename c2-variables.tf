@@ -25,8 +25,8 @@ variable "instance_keypair" {
 #aws EC2 instance type - list 
 variable "instance_type_list"{
     description = "The EC2 instance type"
-    type = list
-    default = ["t3.micro", "t2.micro", "t3.small"]
+    type = list(string)
+    default = ["t2.micro", "t3.micro", "t3.large"]
 }
 
 #aws EC2 instance type map
